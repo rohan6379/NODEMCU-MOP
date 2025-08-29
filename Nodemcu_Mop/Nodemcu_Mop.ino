@@ -14,10 +14,13 @@
 #define trigPin3 D2
 #define echoPin3 D1
 
+
 // Minimum Distance For The Sensor
-int vertDist = 3;   // Vertical Height Minimum Distance In centimetre
-int frontDist = 5;  // Front Minimum Distance In centimetre
-int backDist = 5;   // Back Minimum Distance In centimetre
+int vertDist = 5;   // Vertical Height Minimum Distance In centimetre
+int frontDist = 10;  // Front Minimum Distance In centimetre
+int backDist = 10;   // Back Minimum Distance In centimetre
+
+
 ESP8266_OTA OTA;
 void setup() {
   OTA.setupWiFi_AP("NodeMCU-MOP", "123456789");
